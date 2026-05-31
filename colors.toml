@@ -1,0 +1,33 @@
+## Copyright (C) 2020-2025 Aditya Shakya <adi1090x@gmail.com>
+##
+## Colors configuration -------------------------------------
+
+# Soft Warm Espresso Theme - Legible & Low Eye Strain
+
+[colors.primary]
+background = "#282421" # Softer, slightly lighter warm clay/brown
+foreground = "#EBDBB2" # Soft cream (much warmer and lower contrast than white)
+
+[colors.cursor]
+text = "#282421"
+cursor = "#D4B996"
+
+[colors.normal]
+black = "#3C3430"
+red = "#C14A4A"   # Terracotta red
+green = "#6C782E" # Sage green
+yellow = "#B4710A"# Soft amber
+blue = "#45707A"  # Muted teal/earth blue
+magenta = "#945E80"# Dusty plum
+cyan = "#4C7A5D"  # Forest cyan
+white = "#A89984" # Warm gray
+
+[colors.bright]
+black = "#504742"
+red = "#C14A4A"
+green = "#6C782E"
+yellow = "#B4710A"
+blue = "#45707A"
+magenta = "#945E80"
+cyan = "#4C7A5D"
+white = "#EBDBB2"
