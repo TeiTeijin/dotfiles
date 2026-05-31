@@ -1,0 +1,58 @@
+format = """
+[╭─](bold #B4710A)$os$username$directory$git_branch$git_status$custom$cmd_duration
+[╰─](bold #B4710A)$character"""
+
+[os]
+disabled = false
+style = "bold #B4710A"
+
+[os.symbols]
+Arch = " "
+
+[username]
+show_always = true
+style_user = "bold #EBDBB2"
+style_root = "bold red"
+format = "[$user]($style) in "
+
+[directory]
+style = "bold #45707A"
+format = "[$path]($style)[$read_only]($read_only_style) "
+truncation_length = 3
+truncate_to_repo = true
+
+[git_branch]
+symbol = " "
+style = "bold #6C782E"
+format = "on [$symbol$branch]($style) "
+
+[git_status]
+style = "bold #C14A4A"
+format = '([$all_status$ahead_behind]($style) )'
+
+[cmd_duration]
+min_time = 500
+format = "took [$duration](#A89984) "
+
+[character]
+success_symbol = "[❯](bold #B4710A)"
+error_symbol = "[❯](bold #C14A4A)"
+
+[env_var.VIRTUAL_ENV]
+symbol = "🐍 "
+style = "bold #6C782E"
+format = "[$symbol\\(${value}\\) ]($style)"
+variable = "VIRTUAL_ENV"
+
+[custom.venv]
+command = "basename $VIRTUAL_ENV"
+when = '[[ -n "$VIRTUAL_ENV" ]]'
+symbol = "🐍 "
+style = "bold #6C782E"
+format = "[$symbol($output )]($style)"
+
+[battery]
+disabled = true
+
+[time]
+disabled = true

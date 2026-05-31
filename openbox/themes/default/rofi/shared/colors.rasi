@@ -1,0 +1,14 @@
+/* Copyright (C) 2020-2025 Aditya Shakya <adi1090x@gmail.com> */
+
+/**
+ * Warm Espresso Rofi Color Palette
+ **/
+
+* {
+    background:     #282421FF; /* Warm clay background */
+    background-alt: #3C3430FF; /* Darker accent panels */
+    foreground:     #EBDBB2FF; /* Soft legible cream text */
+    selected:       #B4710AFF; /* Warm amber gold selection bar */
+    active:         #6C782EFF; /* Sage green for active status */
+    urgent:         #C14A4AFF; /* Terracotta red for alerts */
+}
